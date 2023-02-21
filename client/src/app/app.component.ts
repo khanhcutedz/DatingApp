@@ -17,7 +17,7 @@ ngOnInit() {
 }
 
   getUsers() {
-    this.http.get('http://localhost:5285/api/users').subscribe(response =>{
+    this.http.get('https://localhost:5285/api/users').subscribe(response =>{
       this.users = response;
     }, error =>{
       console.log(error);
